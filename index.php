@@ -1,3 +1,11 @@
+<?php
+#Let's check if the user is already signed in, if so, redirect to dashboard
+session_start();
+if(isset($_SESSION['user']) && isset($_SESSION['hash'])){
+    #Already signed in, redirect:
+    header("Location: pages/dashboard.php");
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,8 +49,8 @@
                         <li><a href="#">menu</a></li>
                     </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">menu</a></li> <!-- Sign in button will probably be here -->
+                    <ul class="rbtn nav navbar-nav navbar-right">
+                        <li id="rbtnfixed"><a class="rbtn" href="pages/signin.php">Sign in</a></li>
                     </ul>
 
                 </div>
@@ -100,7 +108,7 @@
 
             </div>
 
-            <footer>&copy; CarParkSystem&trade; &mdash; A project by <a href="https://github.com/SPETS1337/" target="_blank">SPETS1337</a></footer>
+            <?php include("include/footer.html"); ?>
 
             <script src="js/jquery.js"></script>
             <script src="js/bootstrap.min.js"></script>

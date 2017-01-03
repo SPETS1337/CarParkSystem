@@ -17,11 +17,26 @@
       
     </head>
 
-    <body>
+    <body id="f5f5f5">
 
             <!-- Login form -->
 
-            <?php include("../include/footer.html"); ?>
+                <div class="col-md-4">&nbsp;</div>
+
+                <div class="sic col-md-3">
+
+                    <span><i class="fa fa-unlock-alt fa-fw"></i> Sign in</span><br>
+                    <label>username</label><br>
+                    <input type="text" name="username" placeholder="JohnDoe55"><br>
+                    <label>password</label><br>
+                    <input type="password" name="password" placeholder="•••••••••••••••••"><br><br>
+
+                    <button class="btn btn-primary">Continue</button>
+
+                </div>
+
+
+            <!--<?php include("../include/footer.html"); ?>-->
 
             <script src="../js/jquery.js"></script>
             <script src="../js/bootstrap.min.js"></script>

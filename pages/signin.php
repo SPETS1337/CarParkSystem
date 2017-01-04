@@ -20,8 +20,8 @@
     <body id="f5f5f5">
 
             <!-- Login form -->
-
-                <div class="col-md-4">&nbsp;</div>
+            <a href="../index.php"><p class="goBack"><i class="fa fa-long-arrow-left fa-fw"></i> Go back</p></a>
+                <div class="col-md-4"></div>
 
                 <div class="sic col-md-3">
 
